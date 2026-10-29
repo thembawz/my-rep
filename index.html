@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Malak 🌷</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fx"></canvas>
+<svg width="0" height="0" style="position:absolute"><defs>
+<radialGradient id="po" cx="50%" cy="85%" r="90%"><stop offset="0" stop-color="#ffd6e6"/><stop offset="1" stop-color="#f0498c"/></radialGradient>
+<radialGradient id="pi" cx="50%" cy="85%" r="90%"><stop offset="0" stop-color="#fff2f7"/><stop offset="1" stop-color="#ff9cc3"/></radialGradient>
+</defs></svg>
+
+<div id="lock">
+  <div id="edge"></div>
+  <div class="sub">something is waiting for you…</div>
+  <h1 id="lockTitle">Malak’s day<br>is coming <span id="cue" role="button" aria-label="tulip">🌷</span></h1>
+  <div class="count" id="count"></div>
+  <div class="count hidden" id="codeWrap"><div><input id="codeIn" type="text" inputmode="text" autocomplete="off" placeholder="· · · ·"><button id="codeGo">→</button></div></div>
+  <div class="card hidden" id="locBox"></div>
+  <div class="sub hidden" id="clue"></div>
+  <input class="hidden" id="fb" autocomplete="off" placeholder="type it…">
+  <input class="hidden" id="pw" type="password" autocomplete="off" placeholder="password">
+  <p class="sub" style="margin-top:30px">(move your cursor or finger around)</p>
+</div>
+
+<div id="deck" class="hidden">
+  <div id="garden"></div>
+
+  <div class="slide s0"><div class="in">
+    <div class="ttl">Happy Birthday <span>Malak</span> 🌷</div>
+    <p class="sub" style="text-shadow:0 2px 10px #000">A tiny website made just for you.<br>Press Next → when you’re ready.</p>
+  </div></div>
+
+  <div class="slide"><div class="in">
+    <h2>You asked twice. I finally understood.</h2>
+    <p class="sub">A true story, reconstructed from the evidence.</p>
+    <div class="chat" id="chat"></div>
+  </div></div>
+
+  <div class="slide"><div class="in">
+    <h2>Reasons Malak is awesome</h2>
+    <p class="sub">Hover (or tap) a square 👀</p>
+    <div class="grid" id="reasons"></div>
+  </div></div>
+
+  <div class="slide"><div class="in">
+    <h2>A message from me</h2>
+    <div class="msg cmp">
+      <p>Dear Malak,</p>
+      <p>First of all, I’m sorry I forgot your birthday last year. I’m not proud of it.</p>
+      <p>You said this website thing as a joke, and I almost let it stay a joke. But then I found your hint from last year and realized you really wanted it. So here it is, built with a lot of effort (and a little bit of panic, because websites are not my specialty 😅).</p>
+      <p>Sometimes I think about how our friendship started: my little sister took a spoon from you, and you texted me so I could give it back. Such a random coincidence, yet it’s what started all of this. Our texts were awkward at first, but slowly we got used to each other, and now I call you twin, lol. It all happened so fast that it feels like yesterday.</p>
+    </div>
+  </div></div>
+
+  <div class="slide"><div class="in">
+    <h2>Our little memories 🌷</h2>
+    <div class="msg cmp">
+      <p>Remember when we met up to stick stickers? I was confused and had no idea what to do either, even though I was trying to hide it (you weren’t the only one who felt that way). Two confused people, zero clue, and somehow it worked out. I’m glad we did it, because now we have matching calculators that I’ll try to keep safe for as long as I can.</p>
+      <p>Thank you for all your gifts too, the ring, the keychain… I still have all of them in my room. And I promise that one day I’ll fill your room with gifts too.</p>
+      <p>I’m sorry if I ever made you angry. I never mean to, and I’ll always try not to, twin. I’m so thankful for everything you’ve done for me. It might seem like you did nothing, but just being there is enough for me.</p>
+      <p>Happy birthday. I’m really glad you’re my friend. 🌷</p>
+    </div>
+  </div></div>
+
+  <div class="slide"><div class="in">
+    <h2>Birthday vouchers 🎁</h2>
+    <p class="sub">Choose <b>ONE</b> gift. Hover (or tap) to see it, click to pick it. No changing your mind 😉</p>
+    <div class="grid" id="coupons"></div>
+  </div></div>
+
+  <div class="slide"><div class="in">
+    <div style="font-size:3rem">🎂🌷🎉</div>
+    <h1>Happy Birthday,<br>Malak!</h1>
+    <p style="font-size:1.15rem">I wish you a long and happy life, and I wish you all the best.</p>
+  </div></div>
+
+  <nav>
+    <button class="ghost" id="prev">← Back</button>
+    <div class="dots" id="dots"></div>
+    <button id="next">Next →</button>
+  </nav>
+</div>
+
+<div id="secret" class="hidden"><div id="sp"></div><div class="in" style="position:relative;z-index:2">
+  <h1 class="sh">You found it 🌷</h1>
+  <div class="msg cmp"><p>📸 <b>Send me a screenshot of this page.</b></p></div>
+  <h2 class="sg">3 secret gifts. Choose only one 🎁</h2>
+  <div class="grid" id="sgifts"></div>
+  <p><button class="ghost" id="secBack">← Back</button></p>
+</div></div>
+
+<div id="veil"></div>
+<div id="zoom"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
